@@ -1,8 +1,8 @@
 /* C++ code produced by gperf version 3.0.3 */
-/* Command-line: gperf -L C++ -E -t /private/var/folders/17/h190jfn55w78k880vbn4lct80000gp/T/sivakumar/audiorecorder-generated/KrollGeneratedBindings.gperf  */
+/* Command-line: gperf -L C++ -E -t /private/var/folders/52/zqyjkgrn0fqg6gbcfv8k3t400000gp/T/penrique/audiorecorder-generated/KrollGeneratedBindings.gperf  */
 /* Computed positions: -k'' */
 
-#line 3 "/private/var/folders/17/h190jfn55w78k880vbn4lct80000gp/T/sivakumar/audiorecorder-generated/KrollGeneratedBindings.gperf"
+#line 3 "/private/var/folders/52/zqyjkgrn0fqg6gbcfv8k3t400000gp/T/penrique/audiorecorder-generated/KrollGeneratedBindings.gperf"
 
 
 #include <string.h>
@@ -12,7 +12,7 @@
 #include "in.shivakumars.audiorecorder.AudiorecorderModule.h"
 
 
-#line 13 "/private/var/folders/17/h190jfn55w78k880vbn4lct80000gp/T/sivakumar/audiorecorder-generated/KrollGeneratedBindings.gperf"
+#line 13 "/private/var/folders/52/zqyjkgrn0fqg6gbcfv8k3t400000gp/T/penrique/audiorecorder-generated/KrollGeneratedBindings.gperf"
 struct titanium::bindings::BindEntry;
 /* maximum key range = 1, duplicates = 0 */
 
@@ -51,7 +51,7 @@ AudiorecorderBindings::lookupGeneratedInit (register const char *str, register u
       {""}, {""}, {""}, {""}, {""}, {""}, {""}, {""}, {""},
       {""}, {""}, {""}, {""}, {""}, {""}, {""}, {""}, {""},
       {""}, {""}, {""},
-#line 15 "/private/var/folders/17/h190jfn55w78k880vbn4lct80000gp/T/sivakumar/audiorecorder-generated/KrollGeneratedBindings.gperf"
+#line 15 "/private/var/folders/52/zqyjkgrn0fqg6gbcfv8k3t400000gp/T/penrique/audiorecorder-generated/KrollGeneratedBindings.gperf"
       {"in.shivakumars.audiorecorder.AudiorecorderModule", ::in::shivakumars::audiorecorder::AudiorecorderModule::bindProxy, ::in::shivakumars::audiorecorder::AudiorecorderModule::dispose}
     };
 
@@ -69,5 +69,5 @@ AudiorecorderBindings::lookupGeneratedInit (register const char *str, register u
     }
   return 0;
 }
-#line 16 "/private/var/folders/17/h190jfn55w78k880vbn4lct80000gp/T/sivakumar/audiorecorder-generated/KrollGeneratedBindings.gperf"
+#line 16 "/private/var/folders/52/zqyjkgrn0fqg6gbcfv8k3t400000gp/T/penrique/audiorecorder-generated/KrollGeneratedBindings.gperf"
 

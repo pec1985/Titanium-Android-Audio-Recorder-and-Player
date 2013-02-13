@@ -209,7 +209,7 @@ public class AudiorecorderModulePrototype extends KrollModulePrototype
 	protected int findPrototypeId(String s)
 	{
 		int id = 0;
-// #generated# Last update: 2013-02-13 20:00:15 CET
+// #generated# Last update: 2013-02-13 22:20:46 CET
         L0: { id = 0; String X = null; int c;
             L: switch (s.length()) {
             case 7: X="stopRec";id=Id_stopRec; break L;

@@ -72,7 +72,7 @@ public class AudiorecorderModule extends KrollModule {
 				+ TiApplication.getAppCurrentActivity().getPackageName()
 				+ "/"
 				+ fileName + ".mp4");
-		mRecorder.setAudioEncoder(MediaRecorder.AudioEncoder.AAC_ELD);
+		mRecorder.setAudioEncoder(MediaRecorder.AudioEncoder.AAC);
 
         try {
 			mRecorder.setAudioEncoder(MediaRecorder.getAudioSourceMax());
