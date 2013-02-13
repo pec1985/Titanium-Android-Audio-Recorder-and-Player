@@ -20,8 +20,6 @@ import org.appcelerator.kroll.KrollProxy;
 import org.appcelerator.kroll.KrollProxySupport;
 import org.appcelerator.kroll.KrollRuntime;
 
-import org.appcelerator.kroll.common.TiConfig;
-
 import org.appcelerator.kroll.runtime.rhino.KrollBindings;
 import org.appcelerator.kroll.runtime.rhino.KrollGeneratedBindings;
 import org.appcelerator.kroll.runtime.rhino.Proxy;
@@ -41,7 +39,6 @@ public class AudiorecorderModulePrototype extends KrollModulePrototype
 {
 	// GENERATE_SUID
 
-	private static final boolean DBG = TiConfig.LOGD;
 	private static final String TAG = "AudiorecorderModulePrototype";
 	private static final String CLASS_TAG = "AudiorecorderModule";
 	private static AudiorecorderModulePrototype audiorecorderModulePrototype;
@@ -54,9 +51,7 @@ public class AudiorecorderModulePrototype extends KrollModulePrototype
 
 	public static void dispose()
 	{
-		if (DBG) {
-			Log.d(TAG, "dispose()");
-		}
+		Log.d(TAG, "dispose()", Log.DEBUG_MODE);
 		audiorecorderModulePrototype = null;
 	}
 
@@ -91,9 +86,7 @@ public class AudiorecorderModulePrototype extends KrollModulePrototype
 	// Methods
 	public Object stopRec(Context context, Scriptable thisObj, Object[] args)
 	{
-		if (DBG) {
-			Log.d(TAG, "stopRec()");
-		}
+		Log.d(TAG, "stopRec()", Log.DEBUG_MODE);
 
 		try {
 		AudiorecorderModule proxy = (AudiorecorderModule) ((Proxy) thisObj).getProxy();
@@ -112,9 +105,7 @@ public class AudiorecorderModulePrototype extends KrollModulePrototype
 
 	public void startPlay(Context context, Scriptable thisObj, Object[] args)
 	{
-		if (DBG) {
-			Log.d(TAG, "startPlay()");
-		}
+		Log.d(TAG, "startPlay()", Log.DEBUG_MODE);
 
 		try {
 		AudiorecorderModule proxy = (AudiorecorderModule) ((Proxy) thisObj).getProxy();
@@ -135,9 +126,7 @@ public class AudiorecorderModulePrototype extends KrollModulePrototype
 
 	public void stopPlay(Context context, Scriptable thisObj, Object[] args)
 	{
-		if (DBG) {
-			Log.d(TAG, "stopPlay()");
-		}
+		Log.d(TAG, "stopPlay()", Log.DEBUG_MODE);
 
 		try {
 		AudiorecorderModule proxy = (AudiorecorderModule) ((Proxy) thisObj).getProxy();
@@ -153,9 +142,7 @@ public class AudiorecorderModulePrototype extends KrollModulePrototype
 
 	public void startRec(Context context, Scriptable thisObj, Object[] args)
 	{
-		if (DBG) {
-			Log.d(TAG, "startRec()");
-		}
+		Log.d(TAG, "startRec()", Log.DEBUG_MODE);
 
 		try {
 		AudiorecorderModule proxy = (AudiorecorderModule) ((Proxy) thisObj).getProxy();
@@ -176,9 +163,7 @@ public class AudiorecorderModulePrototype extends KrollModulePrototype
 
 	public Object isPlayerPlaying(Context context, Scriptable thisObj, Object[] args)
 	{
-		if (DBG) {
-			Log.d(TAG, "isPlayerPlaying()");
-		}
+		Log.d(TAG, "isPlayerPlaying()", Log.DEBUG_MODE);
 
 		try {
 		AudiorecorderModule proxy = (AudiorecorderModule) ((Proxy) thisObj).getProxy();
@@ -224,7 +209,7 @@ public class AudiorecorderModulePrototype extends KrollModulePrototype
 	protected int findPrototypeId(String s)
 	{
 		int id = 0;
-// #generated# Last update: 2012-10-18 13:10:23 GMT+05:30
+// #generated# Last update: 2013-02-13 20:00:15 CET
         L0: { id = 0; String X = null; int c;
             L: switch (s.length()) {
             case 7: X="stopRec";id=Id_stopRec; break L;

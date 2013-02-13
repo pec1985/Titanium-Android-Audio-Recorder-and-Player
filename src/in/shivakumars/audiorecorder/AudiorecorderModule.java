@@ -80,6 +80,27 @@ public class AudiorecorderModule extends KrollModule {
 			Log.e(LCAT, e.toString());
 		}
 
+        try {
+			mRecorder.setAudioEncoder(MediaRecorder.getAudioSourceMax());
+		} catch (Exception e) {
+			Log.e(LCAT, "setAudioEncoder(MediaRecorder.getAudioSourceMax()) failed");
+			Log.e(LCAT, e.toString());
+		}
+
+        try {
+			mRecorder.setAudioEncodingBitRate(16);
+		} catch (Exception e) {
+			Log.e(LCAT, "setAudioEncodingBitRate(16) failed");
+			Log.e(LCAT, e.toString());
+		}
+
+        try {
+			mRecorder.setAudioSamplingRate(44100);
+		} catch (Exception e) {
+			Log.e(LCAT, "setAudioSamplingRate(44100) failed");
+			Log.e(LCAT, e.toString());
+		}
+        
 		mRecorder.start();
 	}
 
