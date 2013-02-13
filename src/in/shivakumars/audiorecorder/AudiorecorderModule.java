@@ -73,12 +73,6 @@ public class AudiorecorderModule extends KrollModule {
 				+ "/"
 				+ fileName + ".mp4");
 		mRecorder.setAudioEncoder(MediaRecorder.AudioEncoder.AMR_NB);
-		try {
-			mRecorder.prepare();
-		} catch (IOException e) {
-			Log.e(LCAT, "prepare() failed");
-			Log.e(LCAT, e.toString());
-		}
 
         try {
 			mRecorder.setAudioEncoder(MediaRecorder.getAudioSourceMax());
@@ -101,6 +95,13 @@ public class AudiorecorderModule extends KrollModule {
 			Log.e(LCAT, e.toString());
 		}
         
+		try {
+			mRecorder.prepare();
+		} catch (IOException e) {
+			Log.e(LCAT, "prepare() failed");
+			Log.e(LCAT, e.toString());
+		}
+
 		mRecorder.start();
 	}
 
