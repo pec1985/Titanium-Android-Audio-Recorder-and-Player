@@ -76,13 +76,15 @@ public class AudiorecorderModule extends KrollModule {
 			mRecorder.setAudioEncoder(MediaRecorder.AudioEncoder.AAC_ELD);
 		else
 			mRecorder.setAudioEncoder(MediaRecorder.AudioEncoder.AAC);
+
+/*
         try {
 			mRecorder.setAudioEncoder(MediaRecorder.getAudioSourceMax());
 		} catch (Exception e) {
 			Log.e(LCAT, "setAudioEncoder(MediaRecorder.getAudioSourceMax()) failed");
 			Log.e(LCAT, e.toString());
 		}
-
+ */
         try {
 			mRecorder.setAudioEncodingBitRate(16);
 		} catch (Exception e) {
